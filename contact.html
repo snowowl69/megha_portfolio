@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Megha Garg</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="contact-page">
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-solid" id="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-text">Megha</span>
+            <span class="logo-dot">.</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#journey" class="nav-link">Journey</a>
+            <a href="index.html#skills" class="nav-link">Expertise</a>
+            <a href="index.html#projects" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="contact-hero-content reveal-up">
+            <span class="section-tag">Contact</span>
+            <h1 class="section-title">Let's Start a <span class="highlight">Conversation</span></h1>
+            <p class="contact-subtitle">Have a project, opportunity, or idea? I'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info Cards -->
+            <div class="contact-info reveal-left">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>megha.garg@example.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="info-text">
+                        <h4>Phone</h4>
+                        <p>+91 XXXXX XXXXX</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <h4>Location</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="info-text">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/meghagarg</p>
+                    </div>
+                </div>
+
+                <div class="social-links-contact">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:megha@example.com" class="social-circle"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-circle"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper reveal-right">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required placeholder=" " maxlength="100">
+                            <label for="name">Your Name</label>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required placeholder=" " maxlength="200">
+                            <label for="email">Your Email</label>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" required placeholder=" " maxlength="200">
+                            <label for="subject">Subject</label>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper textarea-wrapper">
+                            <textarea id="message" name="message" rows="5" required placeholder=" " maxlength="2000"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map / Extra Section -->
+    <section class="contact-extra">
+        <div class="extra-content reveal-up">
+            <div class="availability-card">
+                <div class="pulse-dot"></div>
+                <h3>Currently Available</h3>
+                <p>Open for internships, projects, and collaborative opportunities in marketing, sales strategy, and brand management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">Megha Garg</span>
+                <p>Marketing Strategist & Business Enthusiast</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:megha@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Megha Garg. Crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
