@@ -1,10 +1,4 @@
-/* =============================================
-   MEGHA GARG — PORTFOLIO SCRIPTS
-   ============================================= */
-
 document.addEventListener('DOMContentLoaded', () => {
-
-    // ---------- Loader ----------
     const loader = document.getElementById('loader');
     if (loader) {
         window.addEventListener('load', () => {
@@ -12,13 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 loader.classList.add('hidden');
             }, 800);
         });
-        // Fallback: hide after 3s even if load event already fired
         setTimeout(() => {
             loader.classList.add('hidden');
         }, 3000);
     }
-
-    // ---------- Cursor Glow ----------
     const cursorGlow = document.getElementById('cursorGlow');
     if (cursorGlow && window.innerWidth > 768) {
         let mouseX = 0, mouseY = 0;
@@ -28,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             mouseX = e.clientX;
             mouseY = e.clientY;
         });
-
         function animateGlow() {
             glowX += (mouseX - glowX) * 0.08;
             glowY += (mouseY - glowY) * 0.08;
@@ -38,8 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         animateGlow();
     }
-
-    // ---------- Navbar Scroll ----------
     const navbar = document.getElementById('navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {
@@ -51,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---------- Hamburger Menu ----------
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     if (hamburger && navLinks) {
@@ -60,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('open');
         });
 
-        // Close menu on link click
         navLinks.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -68,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // ---------- Active Nav Link on Scroll ----------
     const sections = document.querySelectorAll('section[id]');
     const navLinksList = document.querySelectorAll('.nav-link');
 
@@ -95,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', updateActiveLink);
     }
 
-    // ---------- Reveal Animations ----------
     const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -111,8 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
-
-    // ---------- Counter Animation ----------
     const statNumbers = document.querySelectorAll('.stat-number[data-target]');
 
     const counterObserver = new IntersectionObserver((entries) => {
@@ -142,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 30);
     }
 
-    // ---------- Skill Bar Animation ----------
     const skillFills = document.querySelectorAll('.skill-fill[data-width]');
 
     const skillObserver = new IntersectionObserver((entries) => {
@@ -160,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     skillFills.forEach(el => skillObserver.observe(el));
 
-    // ---------- Smooth Scroll for Anchor Links ----------
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -173,15 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---------- Contact Form ----------
     const contactForm = document.getElementById('contactForm');
     const formStatus = document.getElementById('formStatus');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-
-            // Basic client-side validation
             const name = document.getElementById('name');
             const email = document.getElementById('email');
             const subject = document.getElementById('subject');
@@ -191,15 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 showFormStatus('Please fill in all fields.', 'error');
                 return;
             }
-
-            // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email.value.trim())) {
                 showFormStatus('Please enter a valid email address.', 'error');
                 return;
             }
-
-            // Simulate form submission
             const btn = contactForm.querySelector('.btn-submit');
             btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
             btn.disabled = true;
@@ -222,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     }
 
-    // ---------- Tilt Effect on Skill Cards ----------
     const tiltCards = document.querySelectorAll('[data-tilt]');
     if (window.innerWidth > 768) {
         tiltCards.forEach(card => {
@@ -242,8 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // ---------- Parallax on Hero Shapes ----------
     if (window.innerWidth > 768) {
         window.addEventListener('scroll', () => {
             const scrolled = window.scrollY;
@@ -254,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---------- Photo fallback ----------
     const heroPhoto = document.getElementById('heroPhoto');
     if (heroPhoto) {
         heroPhoto.addEventListener('error', function () {
@@ -267,8 +235,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>`;
         });
     }
-
-    // About page image fallback
     document.querySelectorAll('.about-image-wrapper img').forEach(img => {
         img.addEventListener('error', function () {
             this.style.display = 'none';

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --primary: #6C3CE0;
     --primary-light: #8B5CF6;
     --primary-dark: #5521C4;
@@ -635,7 +635,6 @@ img {
     50% { transform: scale(1.3); opacity: 0.7; }
 }
 
-/* Floating Badges */
 .floating-badge {
     position: absolute;
     display: flex;
@@ -680,7 +679,6 @@ img {
     50% { transform: translateY(-10px); }
 }
 
-/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -726,7 +724,6 @@ img {
     letter-spacing: 0.15em;
 }
 
-/* ---------- About Section ---------- */
 .about {
     padding: 8rem 5%;
     max-width: 1400px;
@@ -855,7 +852,6 @@ img {
     color: var(--text-muted);
 }
 
-/* ---------- Journey / Timeline ---------- */
 .journey {
     padding: 8rem 5%;
     max-width: 1000px;
@@ -947,7 +943,6 @@ img {
     line-height: 1.7;
 }
 
-/* ---------- Skills Section ---------- */
 .skills {
     padding: 8rem 5%;
     max-width: 1400px;
@@ -1044,7 +1039,6 @@ img {
     transition: width 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Tools Section */
 .tools-section {
     text-align: center;
 }
@@ -1082,7 +1076,6 @@ img {
     transform: translateY(-2px);
 }
 
-/* ---------- Projects Section ---------- */
 .projects {
     padding: 8rem 5%;
     max-width: 1400px;
@@ -1176,7 +1169,6 @@ img {
     border-radius: 50px;
 }
 
-/* ---------- Interests Section ---------- */
 .interests {
     padding: 8rem 5%;
     max-width: 1200px;
@@ -1236,7 +1228,6 @@ img {
     line-height: 1.6;
 }
 
-/* ---------- CTA Section ---------- */
 .cta-section {
     padding: 6rem 5%;
     text-align: center;
@@ -1269,7 +1260,6 @@ img {
     margin: 0 auto 2rem;
 }
 
-/* ---------- Footer ---------- */
 .footer {
     padding: 3rem 5%;
     border-top: 1px solid var(--border-color);
@@ -1327,7 +1317,6 @@ img {
     color: var(--text-muted);
 }
 
-/* ---------- Contact Page Styles ---------- */
 .contact-hero {
     min-height: 50vh;
     display: flex;
@@ -1366,7 +1355,6 @@ img {
     align-items: flex-start;
 }
 
-/* Contact Info */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1445,7 +1433,6 @@ img {
     box-shadow: 0 8px 25px rgba(108, 60, 224, 0.4);
 }
 
-/* Contact Form */
 .contact-form-wrapper {
     padding: 2.5rem;
     background: var(--bg-card);
@@ -1547,7 +1534,6 @@ img {
     color: #ef4444;
 }
 
-/* Contact Extra */
 .contact-extra {
     padding: 4rem 5% 6rem;
     max-width: 800px;
@@ -1600,7 +1586,6 @@ img {
     line-height: 1.7;
 }
 
-/* ---------- Animations ---------- */
 .reveal-up {
     opacity: 0;
     transform: translateY(40px);
@@ -1626,7 +1611,6 @@ img {
     transform: translate(0, 0);
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
     .hero-content {
         flex-direction: column-reverse;
